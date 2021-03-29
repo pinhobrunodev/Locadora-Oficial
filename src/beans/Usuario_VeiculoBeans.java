@@ -2,33 +2,23 @@ package beans;
 
 public class Usuario_VeiculoBeans {
 
-	private UsuarioBeans usuarioBeans;
-	private VeiculoBeans veiculoBens;
+	private Integer id;
 
 	public Usuario_VeiculoBeans() {
-		
+
 	}
 
-	public Usuario_VeiculoBeans(UsuarioBeans usuarioBeans, VeiculoBeans veiculoBens) {
+	public Usuario_VeiculoBeans(Integer id) {
 		super();
-		this.usuarioBeans = usuarioBeans;
-		this.veiculoBens = veiculoBens;
+		this.id = id;
 	}
 
-	public UsuarioBeans getUsuarioBeans() {
-		return usuarioBeans;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setUsuarioBeans(UsuarioBeans usuarioBeans) {
-		this.usuarioBeans = usuarioBeans;
-	}
-
-	public VeiculoBeans getVeiculoBens() {
-		return veiculoBens;
-	}
-
-	public void setVeiculoBens(VeiculoBeans veiculoBens) {
-		this.veiculoBens = veiculoBens;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 }
